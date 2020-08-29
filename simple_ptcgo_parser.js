@@ -26,5 +26,5 @@ function parseList(decklist){
 }
 
 function listToJSON(decklist){
-    return {cards: parseList(decklist)};
+    return JSON.stringify({cards: parseList(decklist)});
 }
